@@ -1,0 +1,15 @@
+﻿<Window x:Class="SampleWPF.Messages.MessageSamples"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SampleWPF.Messages"
+        mc:Ignorable="d"
+        Title="MessageSamples" Height="Auto" Width="Auto">
+    <WrapPanel Orientation="Horizontal" Margin="10">
+        <Button Click="MessageTitle_Click">Message with Title</Button>
+        <Button Click="MessageButton_Click">Message with Buttons</Button>
+        <Button Click="MessageIcon_Click">Message with Icon</Button>
+        <Button Click="MessageOption_Click">Message with Option</Button>
+    </WrapPanel>
+</Window>

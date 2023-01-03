@@ -1,0 +1,29 @@
+﻿<Window x:Class="SampleWPF.Lists.ListBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SampleWPF.Lists"
+        mc:Ignorable="d"
+        Title="ListBox" Height="200" Width="500">
+    <DockPanel Margin="10">
+        <StackPanel DockPanel.Dock="Right">
+            <Button Content="Show selected" Click="ShowSelected_Click"/>
+            <Button Content="Select first" Click="SelectFirst_Click"/>
+            <Button Content="Select next" Click="SelectNext_Click"/>
+            <Button Content="Select last" Click="SelectLast_Click"/>
+            <Button Content="Select brush text" Click="SelectText_Click"/>
+            <Button Content="Select all" Click="SelectAll_Click" />
+        </StackPanel>
+        <ListBox Name="lbTodoList" DockPanel.Dock="Left" HorizontalAlignment="Stretch" SelectionMode="Extended" SelectionChanged="lbTodoList_SelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <DockPanel>
+                        <TextBlock DockPanel.Dock="Left" Text="{Binding Title}"/>
+                        <ProgressBar DockPanel.Dock="Right" Width="100" Maximum="100" Value="{Binding Completion}"/>
+                    </DockPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </DockPanel>
+</Window>

@@ -1,0 +1,14 @@
+﻿<Window x:Class="SampleWPF.Controls.TextBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SampleWPF.Controls"
+        mc:Ignorable="d"
+        Title="TextBox" Height="180" Width="250">
+    <DockPanel Margin="10">
+        <!-- For spell check, right click word with red underline, same with microsoft word -->
+        <TextBox Name="textBoxSender" SelectionChanged="TextBox_SelectionChanged" DockPanel.Dock="Top"></TextBox>
+        <TextBox Name="textBoxSamp" AcceptsReturn="True" TextWrapping="Wrap" SpellCheck.IsEnabled="True" Language="en-US"/>
+    </DockPanel>
+</Window>

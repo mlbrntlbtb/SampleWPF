@@ -1,0 +1,27 @@
+﻿<Window x:Class="SampleWPF.Controls.Image"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SampleWPF.Controls"
+        mc:Ignorable="d"
+        Title="Image" Height="500" Width="800">
+    <StackPanel Margin="10">
+        <!-- Pack URI/URI: /<ProjectName>;component/<FolderName>/<FileName> -->
+        <!-- Simple relative URL: /<FolderName>/<FileName>-->
+        <Image Source="/SampleWPF;component/Resources/Pikachu.jpg" Height="50" Width="50"/>
+        <Image Source="/SampleWPF;component/Resources/YES.jpg" Height="50" Width="50"/>
+        <Image Source="/SampleWPF;component/Resources/NO.jpg" Height="50" Width="50"/>
+        <Image Source="/SampleWPF;component/Resources/MAYBE.jpg" Height="50" Width="50"/>
+        <Image Source="/SampleWPF;component/Resources/exclamation.png" Height="50" Width="50"/>
+        <Image Source="/SampleWPF;component/Resources/question.png" Height="50" Width="50"/>
+        <Image Source="/Resources/Pikachu.jpg" Height="50" Width="50"/>
+        <StackPanel>
+            <WrapPanel Margin="10" HorizontalAlignment="Center">
+                <Button Name="btnLoadFromFile" Margin="0,0,20,0" Click="btnLoadFromFile_Click">Load from File...</Button>
+                <Button Name="btnLoadFromResource" Click="btnLoadFromResource_Click">Load from Resource</Button>
+            </WrapPanel>
+            <Image Name="imgDynamic" Margin="10" Height="50" Width="50" />
+        </StackPanel>
+    </StackPanel>
+</Window>

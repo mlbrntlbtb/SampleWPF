@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="GlobalTitle">This is a global string.</sys:String>
+    
+    <!--
+     <Style TargetType="TextBlock">
+        <Setter Property="Foreground" Value="Gray" />
+        <Setter Property="FontSize" Value="24" />
+    </Style>
+    -->
+   
+</ResourceDictionary>

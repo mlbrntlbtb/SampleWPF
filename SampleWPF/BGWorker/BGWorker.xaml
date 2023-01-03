@@ -1,0 +1,18 @@
+﻿<Window x:Class="SampleWPF.BGWorker.BGWorker"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SampleWPF.BGWorker"
+        mc:Ignorable="d"
+        Title="BGWorker" Height="300" Width="375">
+    <DockPanel Margin="10">
+        <DockPanel DockPanel.Dock="Top">
+            <Button Content="Run (Worker Thread)" Name="btnRun" Click="btnRun_Click"/>
+            <Button Content="Cancel (Worker Thread)" Name="btnCancel" Click="btnCancel_Click"/>
+        </DockPanel>
+        <ProgressBar DockPanel.Dock="Bottom" Height="18" Name="pbSamp"/>
+
+        <ListBox Name="lbSamp" Margin="0,10"/>
+    </DockPanel>
+</Window>

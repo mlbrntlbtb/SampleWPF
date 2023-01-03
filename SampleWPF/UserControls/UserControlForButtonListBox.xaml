@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="SampleWPF.UserControls.UserControlForButtonListBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SampleWPF.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="30" d:DesignWidth="350">
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="{Binding TextToAdd}" Grid.Column="0" TextWrapping="Wrap" FontWeight="Bold"/>
+        <StackPanel Orientation="Horizontal" Grid.Column="1">
+            <Button Name="AddButton" Grid.Column="1" Height="20" Width="20" Click="AddButton_Click">
+                <Button.Content>
+                    <Image Source="/Resources/YES.jpg" Stretch="Fill"/>
+                </Button.Content>
+            </Button>
+            <Button Name="DeleteButton" Grid.Column="2" Height="20" Width="20" Click="DeleteButton_Click">
+                <Button.Content>
+                    <Image Source="/Resources/NO.jpg" Stretch="Fill"/>
+                </Button.Content>
+            </Button>
+        </StackPanel>
+        <ListBox Name="ListBoxCont" Grid.Column="3"/>
+    </Grid>
+</UserControl>

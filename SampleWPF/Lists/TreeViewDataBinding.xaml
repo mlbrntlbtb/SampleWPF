@@ -1,0 +1,45 @@
+﻿<Window x:Class="SampleWPF.Lists.TreeViewDataBinding"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SampleWPF.Lists"
+        xmlns:self="clr-namespace:SampleWPF.Lists"
+        mc:Ignorable="d"
+        Title="Pokemon Wiki" Icon="/Resources/PokeBall.png" Height="300" Width="300">
+    <Grid Margin="10">
+        <Border BorderThickness="1" BorderBrush="Blue">
+            <TreeView x:Name="tvSamp">
+                <TreeView.Resources>
+                    <HierarchicalDataTemplate DataType="{x:Type self:Rarity}" ItemsSource="{Binding Pokemons}">
+                        <StackPanel Orientation="Vertical">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="0,0,5,0"/>
+                                <Image Source="/Resources/PokeBall.png" Height="10" Width="10"/>
+                            </StackPanel>
+                            <TextBlock Text="{Binding Pokemons.Count, StringFormat=Pokemons: {0}}" FontStyle="Italic" FontSize="9"/>
+                        </StackPanel>
+                    </HierarchicalDataTemplate>
+                    <DataTemplate DataType="{x:Type local:PokemonAdv}">
+                        <Border BorderBrush="SkyBlue" BorderThickness="0,1">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="{Binding Image}" Height="50" Width="50" Stretch="UniformToFill" Margin="0,0,5,0"/>
+                                <StackPanel Orientation="Vertical">
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock FontWeight="Bold" FontSize="8" Text="Name: "/>
+                                        <TextBlock FontWeight="Bold" FontStyle="Italic" Text="{Binding Name}"/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock FontWeight="Bold" FontSize="8" Text="Element: "/>
+                                        <Image Source="{Binding Element.Icon}" Height="15" Width="15" Stretch="UniformToFill" Margin="0,0,5,0"/>
+                                        <TextBlock FontWeight="Bold" FontStyle="Italic" Foreground="{Binding Element.Color}" Text="{Binding Element.Name}"/>
+                                    </StackPanel>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </TreeView.Resources>
+            </TreeView>
+        </Border>
+    </Grid>
+</Window>

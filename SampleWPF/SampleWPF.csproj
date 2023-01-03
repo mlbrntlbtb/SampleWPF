@@ -1,0 +1,86 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Articuno.jpg" />
+    <None Remove="Resources\Balbasaur.jpg" />
+    <None Remove="Resources\blank_page.png" />
+    <None Remove="Resources\Charmander.jpg" />
+    <None Remove="Resources\copy.png" />
+    <None Remove="Resources\cut.jpg" />
+    <None Remove="Resources\disk.jpg" />
+    <None Remove="Resources\Dragon.png" />
+    <None Remove="Resources\Electric.png" />
+    <None Remove="Resources\exclamation.png" />
+    <None Remove="Resources\Fire.png" />
+    <None Remove="Resources\folder.png" />
+    <None Remove="Resources\go_to_web.jpg" />
+    <None Remove="Resources\Grass.png" />
+    <None Remove="Resources\Ice.png" />
+    <None Remove="Resources\left.png" />
+    <None Remove="Resources\MAYBE.jpg" />
+    <None Remove="Resources\Moltres.jpg" />
+    <None Remove="Resources\NO.jpg" />
+    <None Remove="Resources\paste.png" />
+    <None Remove="Resources\Pikachu.jpg" />
+    <None Remove="Resources\Plant.png" />
+    <None Remove="Resources\PokeBall.png" />
+    <None Remove="Resources\PokemonLogo.jpg" />
+    <None Remove="Resources\question.png" />
+    <None Remove="Resources\Rayquaza.jpg" />
+    <None Remove="Resources\right.png" />
+    <None Remove="Resources\Squirtle.jpg" />
+    <None Remove="Resources\text_bold.png" />
+    <None Remove="Resources\text_italic.png" />
+    <None Remove="Resources\text_underline.png" />
+    <None Remove="Resources\user.png" />
+    <None Remove="Resources\Water.png" />
+    <None Remove="Resources\YES.jpg" />
+    <None Remove="Resources\Zapdos.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Articuno.jpg" />
+    <Resource Include="Resources\Balbasaur.jpg" />
+    <Resource Include="Resources\blank_page.png" />
+    <Resource Include="Resources\Charmander.jpg" />
+    <Resource Include="Resources\copy.png" />
+    <Resource Include="Resources\cut.jpg" />
+    <Resource Include="Resources\disk.jpg" />
+    <Resource Include="Resources\Dragon.png" />
+    <Resource Include="Resources\exclamation.png" />
+    <Resource Include="Resources\Fire.png" />
+    <Resource Include="Resources\folder.png" />
+    <Resource Include="Resources\go_to_web.jpg" />
+    <Resource Include="Resources\Grass.png" />
+    <Resource Include="Resources\Ice.png" />
+    <Resource Include="Resources\left.png" />
+    <Resource Include="Resources\Electric.png" />
+    <Resource Include="Resources\MAYBE.jpg" />
+    <Resource Include="Resources\Moltres.jpg" />
+    <Resource Include="Resources\NO.jpg" />
+    <Resource Include="Resources\paste.png" />
+    <Resource Include="Resources\Pikachu.jpg" />
+    <Resource Include="Resources\Plant.png" />
+    <Resource Include="Resources\PokeBall.png" />
+    <Resource Include="Resources\PokemonLogo.jpg" />
+    <Resource Include="Resources\question.png" />
+    <Resource Include="Resources\Rayquaza.jpg" />
+    <Resource Include="Resources\right.png" />
+    <Resource Include="Resources\Squirtle.jpg" />
+    <Resource Include="Resources\text_bold.png" />
+    <Resource Include="Resources\text_italic.png" />
+    <Resource Include="Resources\text_underline.png" />
+    <Resource Include="Resources\user.png" />
+    <Resource Include="Resources\Water.png" />
+    <Resource Include="Resources\YES.jpg" />
+    <Resource Include="Resources\Zapdos.jpg" />
+  </ItemGroup>
+
+</Project>

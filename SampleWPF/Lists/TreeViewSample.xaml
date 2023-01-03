@@ -1,0 +1,19 @@
+﻿<Window x:Class="SampleWPF.Lists.TreeViewSample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SampleWPF.Lists"
+        mc:Ignorable="d"
+        Title="TreeViewSample" Height="200" Width="250">
+    <Grid>
+        <TreeView Name="tvSamp">
+            <TreeViewItem FontWeight="Bold" Header="Fire" Foreground="Red">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Resources/Charmander.jpg" Height="15" Width="15"/>
+                    <TextBlock FontWeight="Bold" Text="Charmander"/>
+                </StackPanel>
+            </TreeViewItem>
+        </TreeView>
+    </Grid>
+</Window>

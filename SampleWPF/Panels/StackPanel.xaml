@@ -1,0 +1,28 @@
+﻿<Window x:Class="SampleWPF.Panels.StackPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SampleWPF.Panels"
+        mc:Ignorable="d"
+        Title="StackPanel" Height="165" Width="600">
+    <DockPanel Background="LightCyan">
+        <!-- DEFAULT ORIENTATION VERTICAL -->
+        <StackPanel DockPanel.Dock="Left" Orientation="Horizontal" Margin="5" Background="LightCoral">
+            <Button VerticalAlignment="Top">Button 1</Button>
+            <Button VerticalAlignment="Center">Button 2</Button>
+            <Button VerticalAlignment="Bottom">Button 3</Button>
+            <Button VerticalAlignment="Bottom">Button 4</Button>
+            <Button VerticalAlignment="Center">Button 5</Button>
+            <Button VerticalAlignment="Top">Button 6</Button>
+        </StackPanel>
+        <StackPanel DockPanel.Dock="Right" Orientation="Vertical" Margin="5" Background="LightGreen">
+            <Button HorizontalAlignment="Left">Button 1</Button>
+            <Button HorizontalAlignment="Center">Button 2</Button>
+            <Button HorizontalAlignment="Right">Button 3</Button>
+            <Button HorizontalAlignment="Right">Button 4</Button>
+            <Button HorizontalAlignment="Center">Button 5</Button>
+            <Button HorizontalAlignment="Left">Button 6</Button>
+        </StackPanel>
+    </DockPanel>
+</Window>

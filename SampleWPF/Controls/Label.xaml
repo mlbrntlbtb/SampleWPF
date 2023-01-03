@@ -1,0 +1,32 @@
+﻿<Window x:Class="SampleWPF.Controls.Label"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SampleWPF.Controls"
+        mc:Ignorable="d"
+        Title="Label" Height="250" Width="250">
+    <StackPanel Margin="10">
+        <!-- ACCESS KEYS: ADD underscore (_) in content then set Target Binding ElementName then press ALT + Key letter -->
+        <Label Content="_Name:" Target="{Binding ElementName=TextBoxName}"/>
+        <TextBox Name="TextBoxName"/>
+        <Label Content="_Email:" Target="{Binding ElementName=TextBoxEmail}"/>
+        <TextBox Name="TextBoxEmail"/>
+
+        <Label Target="{Binding ElementName=TextBoxAddress}">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/Controls/Pikachu.jpg" Height="10" Width="10"/>
+                <AccessText Text="_Address:"/>
+            </StackPanel>
+        </Label>
+        <TextBox Name="TextBoxAddress"/>
+
+        <Label Target="{Binding ElementName=TextBoxPhone}">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/Controls/Pikachu.jpg" Height="10" Width="10"/>
+                <AccessText Text="_Phone:"/>
+            </StackPanel>
+        </Label>
+        <TextBox Name="TextBoxPhone"/>
+    </StackPanel>
+</Window>

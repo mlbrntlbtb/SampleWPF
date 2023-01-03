@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="BGWorker\BGWorker.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Commands\CommandBinding.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Commands\CommandTarget.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\AccessKeys.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\Button.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\ButtonListBoxUsingUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\CheckBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\Image.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\ImageStretch.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\Label.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\LabelTextBoxUsingUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\PasswordBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\RadioButton.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\TabOrder.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\TextBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\TextRendering.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\Tooltip.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DataBinding\DataBinding.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DataBinding\DataBindingCodeBehind.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DataBinding\DataBindingINotifyPropertyChanged.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DataBinding\DataBindingINPCAllModes.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DataBinding\DataBindingINPCSeperateClass.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DataBinding\DataBindingUpdateSourceTrigger.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DataBinding\DataContext.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DataGrids\DataGridRowDetails.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DataGrids\DataGridSample.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Lists\ComboBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Lists\ItemsControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Lists\ListBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Lists\ListViewAdvanced.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Lists\ListViewGridView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Lists\ListViewGrouping.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Lists\ListViewSample.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Lists\TreeViewDataBinding.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Lists\TreeViewSample.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Menus\ContextMenuSample.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Menus\Menu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Menus\MenuCommand.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Menus\StatusBar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Menus\StatusBarAdvanced.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Menus\TabCustomAdvanced.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Menus\TabSample.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Menus\Toolbar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Messages\MessageSamples.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Messages\OpenFileDialogMulti.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Messages\OpenFileDialogSample.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Messages\SaveFileDialogSample.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MiscControls\Border.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MiscControls\BorderBackground.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MiscControls\CalendarMultiDates.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MiscControls\CalendarSample.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MiscControls\DatePickerSample.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MiscControls\Expander.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MiscControls\GroupBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MiscControls\ProgressBar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MiscControls\Slider.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MiscControls\SliderAdvanced.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MiscControls\WebBrowser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Panels\CanvasPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Panels\CanvasPanelZIndex.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Panels\DockPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Panels\GridPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Panels\GridPanelRowColumn.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Panels\GridPanelSpan.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Panels\GridPanelSplitter.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Panels\GridPanelUnits.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Panels\StackPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Panels\WrapPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RichTextEditor\FlowDocumentPageViewer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RichTextEditor\FlowDocumentReader.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RichTextEditor\FlowDocumentScrollViewer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RichTextEditor\FlowDocumentTextAlignment.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RichTextEditor\RichTextBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RichTextEditor\RichTextBoxAdvanced.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SplashScreen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\TextBlock.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Styles\StyleDataTrigger.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Styles\StyleEventTrigger.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Styles\StyleExplicit.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Styles\StyleMultiDataTrigger.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Styles\StyleMultiTrigger.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Styles\StyleSample.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Styles\StyleTriggerAnimations.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Styles\StyleTriggers.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\UserControlForButtonListBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\UserControlForLabelTextBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="BGWorker\BGWorker.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Commands\CommandBinding.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Commands\CommandTarget.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\AccessKeys.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\Button.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\ButtonListBoxUsingUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\CheckBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\Image.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\ImageStretch.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\Label.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\LabelTextBoxUsingUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\PasswordBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\RadioButton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\TabOrder.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\TextBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\TextRendering.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\Tooltip.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DataBinding\DataBinding.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DataBinding\DataBindingCodeBehind.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DataBinding\DataBindingINotifyPropertyChanged.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DataBinding\DataBindingINPCAllModes.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DataBinding\DataBindingINPCSeperateClass.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DataBinding\DataBindingUpdateSourceTrigger.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DataBinding\DataContext.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DataGrids\DataGridRowDetails.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DataGrids\DataGridSample.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Lists\ComboBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Lists\ItemsControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Lists\ListBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Lists\ListViewAdvanced.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Lists\ListViewGridView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Lists\ListViewGrouping.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Lists\ListViewSample.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Lists\TreeViewDataBinding.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Lists\TreeViewSample.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\ContextMenuSample.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\Menu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\MenuCommand.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\StatusBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\StatusBarAdvanced.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\TabCustomAdvanced.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\TabSample.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\Toolbar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Messages\MessageSamples.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Messages\OpenFileDialogMulti.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Messages\OpenFileDialogSample.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Messages\SaveFileDialogSample.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MiscControls\Border.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MiscControls\BorderBackground.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MiscControls\CalendarMultiDates.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MiscControls\CalendarSample.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MiscControls\DatePickerSample.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MiscControls\Expander.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MiscControls\GroupBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MiscControls\ProgressBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MiscControls\Slider.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MiscControls\SliderAdvanced.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MiscControls\WebBrowser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Panels\CanvasPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Panels\CanvasPanelZIndex.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Panels\DockPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Panels\GridPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Panels\GridPanelRowColumn.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Panels\GridPanelSpan.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Panels\GridPanelSplitter.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Panels\GridPanelUnits.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Panels\StackPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Panels\WrapPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ResourceDictionary.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RichTextEditor\FlowDocumentPageViewer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RichTextEditor\FlowDocumentReader.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RichTextEditor\FlowDocumentScrollViewer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RichTextEditor\FlowDocumentTextAlignment.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RichTextEditor\RichTextBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RichTextEditor\RichTextBoxAdvanced.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SplashScreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\TextBlock.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\StyleDataTrigger.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\StyleEventTrigger.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\StyleExplicit.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\StyleMultiDataTrigger.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\StyleMultiTrigger.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\StyleSample.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\StyleTriggerAnimations.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\StyleTriggers.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControls\UserControlForButtonListBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControls\UserControlForLabelTextBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

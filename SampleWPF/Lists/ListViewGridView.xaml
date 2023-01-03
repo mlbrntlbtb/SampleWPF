@@ -1,0 +1,39 @@
+﻿<Window x:Class="SampleWPF.Lists.ListViewGridView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SampleWPF.Lists"
+        mc:Ignorable="d"
+        Title="ListViewGridView" Height="300" Width="250">
+    <Grid>
+        <ListView Name="lvSamp">
+            <ListView.Resources>
+                <Style TargetType="GridViewColumnHeader">
+                    <Setter Property="FontWeight" Value="Bold"/>
+                </Style>
+            </ListView.Resources>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Image" Width="Auto">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Border BorderThickness="1" BorderBrush="SkyBlue">
+                                    <Image Source="{Binding Image}" Height="25" Width="25"/>
+                                </Border>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Name"  Width="Auto" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Header="Element" Width="Auto">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock FontStyle="Italic" FontWeight="Bold" Foreground="{Binding Color}" Text="{Binding Element}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

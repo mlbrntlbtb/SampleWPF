@@ -1,0 +1,25 @@
+﻿<Window x:Class="SampleWPF.Panels.DockPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SampleWPF.Panels"
+        mc:Ignorable="d"
+        Title="DockPanel" Height="250" Width="420">
+    <StackPanel Orientation="Horizontal">
+        <DockPanel DockPanel.Dock="Left" Margin="5" Width="200">  <!-- Controls insided dock panel prioritize order-->
+            <Button DockPanel.Dock="Left">Left</Button>
+            <Button DockPanel.Dock="Top">Top</Button>
+            <Button DockPanel.Dock="Right">Right</Button>
+            <Button DockPanel.Dock="Bottom">Bottom</Button>
+            <Button>Center</Button>
+        </DockPanel>
+        <DockPanel DockPanel.Dock="Right" Margin="5" Width="200" LastChildFill="False">  <!-- Controls insided dock panel prioritize order-->
+            <Button DockPanel.Dock="Top">Top</Button>
+            <Button DockPanel.Dock="Bottom">Bottom</Button>
+            <Button DockPanel.Dock="Left">Left</Button>
+            <Button DockPanel.Dock="Right">Right</Button>
+            <Button>Center</Button>
+        </DockPanel>
+    </StackPanel>
+</Window>
